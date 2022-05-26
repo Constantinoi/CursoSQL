@@ -32,10 +32,10 @@ CREATE TABLE Livros(
 	Ano_Publicacao INT
 );
 
-INSERT INTO Livros VALUES(1,'Cavaleiro Real','Ana Claudia','Feminino',465,'Atlas',49.9,RJ,2009);
-INSERT INTO Livros VALUES(2,'SQL para leigos','João Nunes','Masculino',450,'Addison',98,SP,2018);
-INSERT INTO Livros VALUES(3,'Pessoas efetivas','Eduardo Santos','Masculino',390,'Beta',78.99,RJ,2018);
-INSERT INTO Livros VALUES(4,'Habitos Saudaveis','Eduardo Santos','Masculino',630,'Beta',150.98,RJ,2019);
+INSERT INTO Livros VALUES(1,'Cavaleiro Real','Ana Claudia','Feminino',465,'Atlas',49.9,'RJ',2009);
+INSERT INTO Livros VALUES(2,'SQL para leigos','João Nunes','Masculino',450,'Addison',98,'SP',2018);
+INSERT INTO Livros VALUES(3,'Pessoas efetivas','Eduardo Santos','Masculino',390,'Beta',78.99,'RJ',2018);
+INSERT INTO Livros VALUES(4,'Habitos Saudaveis','Eduardo Santos','Masculino',630,'Beta',150.98,'RJ',2019);
 
 
 1- SELECT * FROM Livros;
@@ -43,5 +43,5 @@ INSERT INTO Livros VALUES(4,'Habitos Saudaveis','Eduardo Santos','Masculino',630
 3- SELECT Nome_Livro, UF_EDITORA FROM Livros WHERE Sexo_Autor = 'Masculino';
 4- SELECT Nome_Livro, Numero_Paginas FROM Livros WHERE Sexo_Autor = 'Feminino';
 5- SELECT Valor_Livro FROM Livros WHERE UF_EDITORA = 'SP';
-6- SELECT * FROM Livros WHERE Sexo_Autor = 'Masculino' 
+6- SELECT * FROM Livros WHERE Sexo_Autor = 'Masculino'
 	AND UF_EDITORA = 'SP' OR UF_EDITORA = 'RJ';

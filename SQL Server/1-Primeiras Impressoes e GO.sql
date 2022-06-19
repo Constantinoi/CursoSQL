@@ -30,3 +30,22 @@ CREATE TABLE teste(
 	NOME VARCHAR(30)
 )
 GO
+
+/* MDF e LDF
+
+MDF - Master Data File (Dicionario de dados)
+
+ºArmazena os dados
+ºAo prencher o MDF é gerado uma transacao
+ºTransacionais
+
+LDF - Log Data File
+
+ºArmazena logs
+
+Ao criar um banco de dados padrao ele crias o mdf e ldf
+
+OBS...
+MDF deve ser usado apenas para dicionario de dados com isso
+ criamos uma extensao chamada de .NDF
+*/
